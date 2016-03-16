@@ -1,0 +1,363 @@
+$verde:#27AD60;
+$blanco:#fff;
+$azul:#2C3E50;
+
+@mixin caja(){
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+@mixin fondoazul(){
+	background-color: $azul;
+}
+
+@mixin colorblanco(){
+	color: $blanco;
+}
+
+@mixin fondoverde(){
+	background-color: $verde;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	p{
+		font-weight: 400;
+	}
+}
+
+.navbar{
+	background-color: $verde;
+}
+
+.Main_Menu{
+	padding-top: 20px;
+	.nav{
+		li{
+			a{
+				color:$blanco;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+button{
+	padding: 10px 15px;
+	color: $blanco;
+	background: #443E44;
+	border: none;
+	font-size: 22px;
+}
+
+h1{
+	font-size: 62px;
+	font-weight: 400;
+}
+
+.linea{
+	width: 250px;
+	border-top: 1px solid;
+	display: inline-block;
+	padding: 30px 0;
+}
+
+.portada{
+	background-image: url(../img/carousel-bg.jpg);
+	background-repeat: none;
+	background-size: cover;
+	padding-top: 60px;
+}
+
+.portada{
+	.container{
+		color: $blanco;	
+
+		h1{
+			padding: 50px 10px;
+		}
+
+		.texto{
+			font-size: 28px;
+			font-weight: 400;
+			line-height: 160%;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.paleta {
+	padding-bottom: 10px;
+	.linea{
+		padding: 20px 0;
+	}
+
+	.a1{
+		@include caja;
+		background: #69D2E7;
+	}
+
+	.a2{
+		@include caja;
+		background: #A7DBDB;
+	}
+
+	.a3{
+		@include caja;
+		background: #E0E4CC;
+	}
+
+	.a4{
+		@include caja;
+		background: #F38630;
+	}
+
+	.a5{
+		@include caja;
+		background: #FA6900;
+	}
+
+	.b1{
+		@include caja;
+		background: #E94C6F;
+	}
+
+	.b2{
+		@include caja;
+		background: #542733;
+	}
+
+	.b3{
+		@include caja;
+		background: #546A62;
+	}
+
+	.b4{
+		@include caja;
+		background: #C6D5CD;
+	}
+
+	.b5{
+		@include caja;
+		background: #FDF200;
+	}
+
+	.c1{
+		@include caja;
+		background: #DB3340;
+	}
+
+	.c2{
+		@include caja;
+		background: #E8B71A;
+	}
+
+	.c3{
+		@include caja;
+		background: #F7EAC8;
+	}
+
+	.c4{
+		@include caja;
+		background: #1FDA9A;
+	}
+
+	.c5{
+		@include caja;
+		background: #28ABE3;
+	}
+
+	.d1{
+		@include caja;
+		background: #588C73;
+	}
+
+	.d2{
+		@include caja;
+		background: #F2E394;
+	}
+
+	.d3{
+		@include caja;
+		background: #F2AE72;
+	}
+
+	.d4{
+		@include caja;
+		background: #D96459;
+	}
+
+	.d5{
+		@include caja;
+		background: #8C4646;
+	}
+
+	.e1{
+		@include caja;
+		background: #D0C91F;
+	}
+
+	.e2{
+		@include caja;
+		background: #85C4B9;
+	}
+	.e3{
+		@include caja;
+		background: #008BBA;
+	}
+
+	.e4{
+		@include caja;
+		background: #DF514C;
+	}
+
+	.e5{
+		@include caja;
+		background: #DC403B;
+	}
+
+}
+
+.about-us{
+	@include fondoazul;
+	@include colorblanco;
+	padding: 80px 0;
+	.col-md-6{
+		padding: 0 45px;
+		font-size: 15px;
+	}
+}
+
+.alambre{
+	width: 95%;
+}
+
+.service{
+	@include fondoverde;
+	@include colorblanco;
+	padding: 80px 0 140px 0;
+
+	.contenedor{
+		padding: 60px 0;
+	}
+
+	.col-md-4{
+		padding: 0 70px;
+		p{
+			color: #ADBEB5;
+			padding-top: 20px;
+		}
+	}
+
+	.col-md-4:hover{
+		background-color: #2A7257;
+		padding: 5%;
+		.fondo{
+			background-color: #A96931;
+			transform: rotate(45deg)
+		}
+		h2 {
+			color: #A96931;
+			border-bottom: 2px solid $blanco; 	
+		}
+	}
+
+	.col-md-3{
+		padding: 0 40px;
+		p{
+			color: #ADBEB5;
+			padding-top: 20px;
+		}
+
+		.fa{
+			color: #ADBEB5;
+			font-size: 22px;
+			padding: 10px 5px;
+		}
+	}
+
+	.h-1{
+		margin-top: 250px;
+	}
+
+	.p-1{
+		margin-bottom: 80px;
+	}
+
+	.fondo{
+		background-color: $azul;
+		background-image: url(../img/icon-bg.png);
+		background-size: cover;
+		padding: 20px;
+		height: 140px;
+		width: 150px;	
+		display: inline-block;	
+	}
+
+}
+
+.foto{
+	width: 140px;
+	height: 140px;
+	background-image: url(../img/team/1.jpg);
+	background-size: containt;
+	display: inline-block;
+}
+
+.price{
+	@include fondoazul;
+	@include colorblanco;
+	padding: 80px 0;
+
+	.borde{
+		border: 1px solid $verde;
+		&:hover{
+			border: 3px solid #8F5F38;
+			transform: translatey(-100px)
+
+		} 
+
+		button{
+			margin: 60px 0 40px;
+		}
+		.h-3{
+			background-color: #8F5F38;
+			padding: 15px 30px;
+			color: #C1C1C1;
+			margin: 0;
+		}
+		
+		h3{
+			padding: 15px 30px;
+			color: #C1C1C1;
+			margin: 0;
+		}
+
+		.verde{
+			padding: 15px 30px;
+			background-color: $verde;
+			.numero{
+				font-size: 50px;	
+			}
+		}
+
+		.naranja{
+			background-color: #8F5F38;
+			padding: 10px 0 1px 0;
+		}
+
+		.blanco{
+			background-color: $blanco;
+			padding: 10px 0 1px 0;
+			color: $azul;
+		}
+		
+		.azul{
+			padding: 10px 0 1px 0;
+		}
+	}
+}
+
+.chico{
+	font-size: 12px;
+}
