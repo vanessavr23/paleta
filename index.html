@@ -36,13 +36,13 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="Main_Menu navbar-example collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right main_nav">
-                    <li class=""> <a href="#" class="">About</a> </li>
-                    <li class=""> <a href="#" class="current">Service</a> </li>
+                    <li class=""> <a href="#about" class="">About</a> </li>
+                    <li class=""> <a href="#service" class="current">Service</a> </li>
                     <li class=""> <a href="#" class="">Team</a> </li>
                     <li class=""> <a href="#" class="">Price</a> </li>
                     <li class=""> <a href="#" class="">Clients</a> </li>
                     <li class=""> <a href="#" class="">Facts</a> </li>
-                    <li class=""> <a href="#" class="">Contact</a> </li>
+                    <li class=""> <a href="#contact" class="">Contact</a> </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
             <!-- /.navbar-collapse -->
@@ -111,7 +111,7 @@
     </div>
 </section>
 
-<section class="about-us">
+<section id="about" class="about-us">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -166,7 +166,7 @@
     </div>
 </section>
 
-<section class="service">
+<section id="service" class="service">
     <div class="container text-center">
         <h1>WHAT WE DO</h1>
         <div class="linea"></div>
@@ -325,31 +325,31 @@
             </div>
         </div>
 
-        <h1>WHAT OUR CLIENTS</h1>
+        <h1 class="h-1">WHAT OUR CLIENTS SAY</h1>
         <div class="linea"></div>
         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
 
         <div class="centro text-center">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur atque exercitationem harum officia error, natus, provident saepe facere id quasi voluptates, cum maxime sunt necessitatibus quam, dignissimos nobis reiciendis architecto.
-            <span class="naranja">-Automotive Company</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur atque exercitationem harum officia error, natus, provident saepe facere id quasi voluptates, cum maxime sunt necessitatibus quam, dignissimos nobis reiciendis. <br>
+            <span class="nara">-Automotive Company</span></p>
         </div>
 
         <div class="centro text-center">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur atque exercitationem harum officia error, natus, provident saepe facere id quasi voluptates, cum maxime sunt necessitatibus quam, dignissimos nobis reiciendis architecto.
-            <span class="naranja">-Xpedius Aerospace</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur atque exercitationem harum officia error, natus, provident saepe facere id quasi voluptates, cum maxime sunt necessitatibus quam, dignissimos nobis reiciendis. <br>
+            <span class="nara">-Xpedius Aerospace</span></p>
         </div>
 
         <div class="centro text-center">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur atque exercitationem harum officia error, natus, provident saepe facere id quasi voluptates, cum maxime sunt necessitatibus quam, dignissimos nobis reiciendis architecto.
-            <span class="naranja">-CKPit Solution</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur atque exercitationem harum officia error, natus, provident saepe facere id quasi voluptates, cum maxime sunt necessitatibus quam, dignissimos nobis reiciendis. <br>
+            <span class="nara">-CKPit Solution</span></p>
         </div>
 
-        <h1>GET IN TOUCH</h1>
+        <h1 class="h-1">GET IN TOUCH</h1>
         <div class="linea"></div>
         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
 
-        <div class="row">
-            <div class="col-md-12">
+        <div id="contact" class="row">
+            <div class="col-md-12 cuestion">
                 <form action="">
                 <input type="text" placeholder="Name*">
                 <input type="text" placeholder="Email*">
@@ -375,29 +375,29 @@
 
 <footer>
     <div class="container">
-        <div class="row">
+        <div class="row text-center">
             <div class="col-md-4">
                 <h3>Visit Us</h3>
                 <hr>
-                <p>10 Lorum Ipsum Street</p>
-                <p>68123 Mannheim</p>
-                <p>Germany</p>
+                <p><i class="fa fa-location-arrow"></i> 10 Lorum Ipsum Street</p>
+                <p><i class="fa fa-map-marker"></i> 68123 Mannheim</p>
+                <p><i class="fa fa-flag"></i> Germany</p>
             </div>
             <div class="col-md-4">
                 <h3>Write Us</h3>
                 <hr>
-                <p>+49 621 123 321 123</p>
-                <p>info@fabianbentz.de</p>
-                <p>+49 62 123 321 124</p>
+                <p><i class="fa fa-phone"></i> +49 621 123 321 123</p>
+                <p><i class="fa fa-envelope"></i> info@fabianbentz.de</p>
+                <p><i class="fa fa-print"></i> +49 62 123 321 124</p>
             </div>
             <div class="col-md-4">
                 <h3>Newsletter</h3>
                 <hr>
                 <div class="input-group">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">Go!</button>
+                        <button class="btn" type="button"><i class="fa fa-envelope"></i></button>
                     </span>
-                    <input type="text" class="form-control" placeholder="Search for...">
+                    <input type="text" class="form-control" placeholder="Enter email">
                 </div>
                 <button>Sbscribe Now!</button>
             </div>
